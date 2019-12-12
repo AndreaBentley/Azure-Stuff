@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.microsoft.azure</groupId>
+    <artifactId>azure-servicebus-samples</artifactId>
+    <name>azure-servicebus-samples</name>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <build>
+        <directory>${project.basedir}/target</directory>
+        <outputDirectory>${project.build.directory}/classes</outputDirectory>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+        <testOutputDirectory>${project.build.directory}/classes</testOutputDirectory>
+        <sourceDirectory>${project.basedir}/src/</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/test/</testSourceDirectory>
+    </build>
+
+    <modules>
+        <module>azure-servicebus/AutoForward</module>
+        <module>azure-servicebus/DeadletterQueue</module>
+        <module>azure-servicebus/DuplicateDetection</module>
+        <module>azure-servicebus/ManagingEntity</module>
+        <module>azure-servicebus/ManagingTopicRules</module>
+        <module>azure-servicebus/MessageBrowse</module>
+        <module>azure-servicebus/PartitionedQueues</module>
+        <module>azure-servicebus/Prefetch</module>
+        <module>azure-servicebus/QueuesGettingStarted</module>
+        <module>azure-servicebus/QueuesWithProxy</module>
+        <module>azure-servicebus/ReceiveLoop</module>
+        <module>azure-servicebus/SasAuthorization</module>
+        <module>azure-servicebus/ScheduledMessages</module>
+        <module>azure-servicebus/TimeToLive</module>
+        <module>azure-servicebus/TopicsGettingStarted</module>
+        <module>azure-servicebus/TopicFilters</module>
+        <module>qpid-jms-client/JmsQueueQuickstart</module>
+        <module>qpid-jms-client/JmsTopicQuickstart</module>
+    </modules>
+
+</project>
